@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Camp de Ski Leysin -Acceuil</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="img/LogoLeysin.png" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="header-logo"><img src="/Leysin/img/LogoLeysin.png" /></div>
+      <h1>Camp de Ski Leysin</h1>
+    </header>
+
+    <main class="container">
+      <section class="main-header">
+        <p>Vivez une expérience inoubliable dans les Alpes suisses</p>
+        <p>📍 Valais, Suisse</p>
+      </section>
+      <section class="gallery">
+        <article class="image-card">
+          <div class="image-placeholder">🎿</div>
+          <div class="image-overlay">
+            <h3>Pistes exceptionnelles</h3>
+            <p>60 km de pistes pour tous les niveaux</p>
+          </div>
+        </article>
+        <article class="image-card">
+          <div class="image-placeholder">🏔️</div>
+          <div class="image-overlay">
+            <h3>Panorama alpin</h3>
+            <p>Vue imprenable sur les Alpes</p>
+          </div>
+        </article>
+        <article class="image-card">
+          <div class="image-placeholder">⛷️</div>
+          <div class="image-overlay">
+            <h3>Moniteurs certifiés</h3>
+            <p>Encadrement professionnel</p>
+          </div>
+        </article>
+        <article class="image-card">
+          <div class="image-placeholder">🏠</div>
+          <div class="image-overlay">
+            <h3>Hébergement confortable</h3>
+            <p>Chalets authentiques et chaleureux</p>
+          </div>
+        </article>
+        <article class="image-card">
+          <div class="image-placeholder">🍽️</div>
+          <div class="image-overlay">
+            <h3>Gastronomie suisse</h3>
+            <p>Cuisine locale et internationale</p>
+          </div>
+        </article>
+        <article class="image-card">
+          <div class="image-placeholder">❄️</div>
+          <div class="image-overlay">
+            <h3>Neige garantie</h3>
+            <p>Altitude 1400-2200m</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="features">
+        <h2>Pourquoi choisir Leysin ?</h2>
+        <div class="features-grid">
+          <article class="feature-item">
+            <div class="feature-icon">🎯</div>
+            <h3>Tous niveaux</h3>
+            <p>Du débutant à l'expert, des pistes adaptées à chacun</p>
+          </article>
+          <article class="feature-item">
+            <div class="feature-icon">👨‍👩‍👧‍👦</div>
+            <h3>Famille</h3>
+            <p>Activités pour petits et grands dans un cadre sécurisé</p>
+          </article>
+          <article class="feature-item">
+            <div class="feature-icon">🚡</div>
+            <h3>Accès facile</h3>
+            <p>Remontées mécaniques modernes et rapides</p>
+          </article>
+          <article class="feature-item">
+            <div class="feature-icon">🌟</div>
+            <h3>Ambiance unique</h3>
+            <p>Village authentique et convivial</p>
+          </article>
+        </div>
+      </section>
+
+      <aside class="info-banner">
+        <h3>📅 Saison 2025</h3>
+        <p><strong>Dates:</strong> Décembre 2025 - Avril 2026</p>
+        <p>
+          <strong>Inclus:</strong> Hébergement, forfait de ski, cours, repas,
+          encadrement
+        </p>
+        <p><strong>Tarifs:</strong> À partir de 850 CHF/semaine</p>
+      </aside>
+
+      <form class="form-section" id="inscriptionForm">
+        <h2>Réservez votre place !</h2>
+        <div class="form-group">
+          <label for="nom">Nom complet *</label>
+          <input type="text" id="nom" name="nom" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="telephone">Téléphone *</label>
+          <input type="tel" id="telephone" name="telephone" required />
+        </div>
+
+        <div class="form-group">
+          <label for="age">Âge du participant</label>
+          <input type="number" id="age" name="age" min="6" max="99" />
+        </div>
+
+        <div class="form-group">
+          <label for="niveau">Niveau de ski *</label>
+          <select id="niveau" name="niveau" required>
+            <option value="">-- Sélectionnez --</option>
+            <option value="debutant">Débutant</option>
+            <option value="intermediaire">Intermédiaire</option>
+            <option value="avance">Avancé</option>
+            <option value="expert">Expert</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="periode">Période souhaitée *</label>
+          <select id="periode" name="periode" required>
+            <option value="">-- Sélectionnez --</option>
+            <option value="dec">Décembre 2025</option>
+            <option value="jan">Janvier 2026</option>
+            <option value="fev">Février 2026</option>
+            <option value="mars">Mars 2026</option>
+            <option value="avril">Avril 2026</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message ou questions</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Dites-nous en plus sur vos attentes..."
+          ></textarea>
+        </div>
+
+        <button type="submit">Envoyer ma demande</button>
+      </form>
+    </main>
+
+    <script>
+      document
+        .getElementById("inscriptionForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          alert(
+            "Merci pour votre demande ! Nous vous contacterons très prochainement pour finaliser votre inscription au camp de ski de Leysin. "
+          );
+        });
+    </script>
+  </body>
+</html>
