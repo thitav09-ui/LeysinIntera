@@ -70,7 +70,6 @@ header.hero {
   display: block;
 }
 
-
 .main-header-row {
   display: flex;
   align-items: center;
@@ -188,8 +187,38 @@ article.image-card {
   transition: transform 0.3s ease;
 }
 
+#imgPiste {
+  background-image: url(img/piste.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#imgPanorama {
+  background-image: url(img/panorama.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#imgMoniteurs {
+  background-image: url(img/moniteurs.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
 #imgChambre {
-  background-image: url(img/chambre.jpeg);
+  background-image: url(img/chambre.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#imgNourriture {
+  background-image: url(img/nourriture.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#imgNeige {
+  background-image: url(img/neige.jpg);
   background-size: cover;
   background-position: center;
 }
