@@ -78,8 +78,8 @@ header.hero {
 
 .header-logo img {
   height: 80px;
-  width: auto;
-  display: block;
+  width: 80px;
+  object-fit: cover;
 }
 
 @media (max-width: 900px) {
@@ -96,9 +96,9 @@ header.hero {
     margin-bottom: 10px;
   }
   .header-logo img {
-    height: 40px;
-    width: auto;
-    display: block;
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
   }
 }
 
@@ -172,6 +172,7 @@ li {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 0.5rem;
   }
 }
 
