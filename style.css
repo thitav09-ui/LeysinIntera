@@ -95,6 +95,11 @@ header.hero {
     margin-right: 0;
     margin-bottom: 10px;
   }
+  .header-logo img {
+    height: 40px;
+    width: auto;
+    display: block;
+  }
 }
 
 /* MAIN */
@@ -159,6 +164,15 @@ main.container {
 
 li {
   list-style: none;
+}
+
+@media (max-width: 900px) {
+  .main-header-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 /* IMG */
