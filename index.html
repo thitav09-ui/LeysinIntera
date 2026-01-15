@@ -5,26 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Camp de Ski Leysin -Acceuil</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="img/LogoLeysin.png" type="image/x-icon" />
-    <link rel="shortcut icon" href="img/LogoLeysin.png" type="image/x-icon" />
+    <link rel="icon" type="image/png" href="img/logoLeysin.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/logoLeysin.png" />
   </head>
   <body>
+    <!-- HEADER -->
     <header class="hero">
-      <div class="header-logo"><img src="img/LogoLeysin.png" alt="NON" /></div>
+      <div class="header-logo"><img src="img/logoLeysin.png" alt="NON" /></div>
       <h1>Camp de Ski Leysin</h1>
     </header>
 
+    <!-- MAIN -->
     <main class="container">
-      <div class="main-header-row">
-        <section class="main-header">
+      <!-- HEADER MAIN -->
+      <section class="main-header-row">
+        <article class="main-header">
           <p>Vivez une expérience inoubliable dans les Alpes suisses</p>
           <p>📍 Valais, Suisse</p>
-        </section>
+        </article>
+        <!-- NAV -->
         <ul class="auth-buttons">
           <li><a href="form.html" class="btn-auth">S'inscire</a></li>
           <li><a href="form.html" class="btn-auth">Déja inscrit?</a></li>
         </ul>
-      </div>
+      </section>
+      <!-- IMG -->
       <section class="gallery">
         <article class="image-card">
           <div class="image-placeholder" id="imgPiste"></div>
@@ -70,6 +75,7 @@
         </article>
       </section>
 
+      <!-- POURQUOI LEYSIN? -->
       <section class="features">
         <h2>Pourquoi choisir Leysin ?</h2>
         <div class="features-grid">
@@ -96,6 +102,7 @@
         </div>
       </section>
 
+      <!-- ASIDE -->
       <aside class="info-banner">
         <h3>📅 Saison 2025</h3>
         <p><strong>Dates:</strong> Décembre 2025 - Avril 2026</p>
@@ -105,6 +112,51 @@
         </p>
         <p><strong>Tarifs:</strong> À partir de 850 CHF/semaine</p>
       </aside>
+      <!-- FOOTER -->
     </main>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-left">
+          &copy; 2026 tout droits réservé à Thierry Tavares da Costa et Camp de
+          Ski Leysin
+        </div>
+        <div class="footer-center">
+          <a href="mailto:thi.tav09@gmail.com" title="Email"
+            ><img src="img/mail.png" alt="Mail" class="footer-icon"
+          /></a>
+          <a href="tel:041782229084" title="Téléphone"
+            ><img src="img/phone.png" alt="Téléphone" class="footer-icon"
+          /></a>
+          <a
+            href="https://www.instagram.com/rdr2.enthusiast.cc/"
+            target="_blank"
+            rel="noopener"
+            title="Instagram"
+            ><img src="img/instagram.png" alt="Instagram" class="footer-icon"
+          /></a>
+          <a
+            href="https://www.youtube.com/@rdr2_enthusiastz"
+            target="_blank"
+            rel="noopener"
+            title="YouTube"
+            ><img src="img/youtube.png" alt="YouTube" class="footer-icon"
+          /></a>
+          <a
+            href="https://www.tiktok.com/@rdr2_enthusiastz"
+            target="_blank"
+            rel="noopener"
+            title="TikTok"
+            ><img src="img/tiktok.png" alt="TikTok" class="footer-icon"
+          /></a>
+          <a
+            href="https://x.com/arthurmorgan617"
+            target="_blank"
+            rel="noopener"
+            title="Twitter"
+            ><img src="img/twitter.png" alt="Twitter" class="footer-icon"
+          /></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
