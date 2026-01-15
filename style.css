@@ -96,9 +96,11 @@ header.hero {
     margin-bottom: 10px;
   }
   .header-logo img {
-    height: 3rem;
-    width: 3rem;
+    height: 16rem;
+    width: 16rem;
     object-fit: cover;
+    max-width: 90vw;
+    max-height: 35vh;
   }
 }
 
